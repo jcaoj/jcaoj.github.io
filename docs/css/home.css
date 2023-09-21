@@ -1,4 +1,18 @@
-.mainNameImage {
-    width: 70%;
-    margin-top: 5%;
+.homeIntro {
+    margin: 10% auto 30% 3%;
 }
+
+.mainName {
+    font-family: 'Cascadia Code', sans-serif;
+    font-size: 230px;
+}
+
+.mainDescription {
+    font-family: 'Cascadia Code', sans-serif;
+    font-size: 50px;
+    margin-top: 0;
+    margin-left: 10%;
+    width: fit-content;
+}
+
+/* https://css-tricks.com/snippets/css/typewriter-effect/ */

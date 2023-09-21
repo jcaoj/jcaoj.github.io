@@ -5,21 +5,27 @@
 }
 
 .background {
+    overflow-y: scroll;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(149, 157, 188));
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(157, 163, 187));
     background-position: center;
     background-size: cover;
-    padding-left: 2%;
-    padding-right: 4%;
+    color: #24326f;
     box-sizing: border-box;
+    position: fixed;
 }
 
 /* NAVBAR */
 .navbar {
-    height: 12%;
+    padding-left: 2%;
+    padding-right: 4%;
+    position: top: 0;
+    height: 10%;
     display: flex;
     align-items: center;
+    /* background-color: white;
+    border-bottom: #24326f 2px solid; */
 }
 
 .logo {
@@ -43,3 +49,32 @@ nav ul li a {
     color: #24326f;
     font-weight: 700;
 }
+
+.anchor{
+    display: block;
+    height: 11%; 
+    margin-top:-11%; 
+    visibility: hidden;
+ }
+
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: linear-gradient(rgb(255, 255, 255), rgb(157, 163, 187));
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #24326f;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #909dd6;
+}
+
