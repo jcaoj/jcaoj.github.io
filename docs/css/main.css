@@ -23,6 +23,10 @@
     height: 10%;
     display: flex;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(243, 244, 245));
+
     /* background-color: white;
     border-bottom: #24326f 2px solid; */
 }
@@ -49,11 +53,33 @@ nav ul li a {
     font-weight: 700;
 }
 
+nav ul li a:hover {
+    color: #e0be14;
+}
+
 .anchor{
     display: block;
-    height: 11%; 
-    margin-top:-11%; 
+    height: 6%; 
+    margin-top:-6%; 
     visibility: hidden;
+ }
+
+ button {
+    width: 180px;
+    color: white;
+    font-size: 16px;
+    padding: 12px 0;
+    background: #24326f;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 15px;
+    cursor: pointer;
+ }
+
+ button:hover {
+    background: #e0be14;
+    color: #24326f;
  }
 
 /* SCROLLBAR */
@@ -74,6 +100,6 @@ nav ul li a {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #909dd6;
+    background: #e0be14;
 }
 

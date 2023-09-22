@@ -15,4 +15,7 @@
     width: fit-content;
 }
 
-/* https://css-tricks.com/snippets/css/typewriter-effect/ */
+.homeButton {
+    position: absolute;
+    top: 90%
+}
