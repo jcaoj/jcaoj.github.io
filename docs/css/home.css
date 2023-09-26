@@ -12,10 +12,36 @@
     font-size: 50px;
     margin-top: 0;
     margin-left: 10%;
-    width: fit-content;
 }
 
 .homeButton {
     position: absolute;
     top: 90%
+}
+
+@media screen and (max-width: 768px) {
+    .homeIntro {
+        margin: 10% auto 45% 3%; 
+    }
+
+    .mainName {
+        font-size: 180px;
+    }
+    
+    .mainDescription {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .homeIntro {
+        margin: 10% auto 95% 3%; 
+    }
+    .mainName {
+        font-size: 120px;
+    }
+    
+    .mainDescription {
+        font-size: 20px;
+    }
 }

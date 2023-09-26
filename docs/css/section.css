@@ -30,13 +30,14 @@
 
 .row {
     display: flex;
+    flex-direction: row;
     height: 70%;
     align-items: start;
     margin: 2% 2% 2% 0;
 }
 
 .col {
-    flex-basis: 50%;
+    flex: 50%;
     margin-right: 3%;
     left: 0;
     top:0;
@@ -45,7 +46,17 @@
 .projectImage {
     border: white 2px solid;
     margin-top: 2%;
+    width: 80%
+}
 
+@media screen and (max-width: 768px) {
+   .row {
+        flex-direction: column;
+   }
+
+   .col {
+    margin-bottom: 5%;
+   }
 }
 
 .contactLogo {

@@ -1,3 +1,8 @@
+/* SCREEN SIZES
+Tablet: max-width: 768px
+Phones: max-width: 480px
+*/
+
 *{
     margin: 0;
     padding: 0;
@@ -62,9 +67,19 @@ nav ul li a:hover {
     height: 6%; 
     margin-top:-6%; 
     visibility: hidden;
- }
+}
 
- button {
+
+@media screen and (max-width: 768px) {
+    .anchor{
+        display: block;
+        height: 10%; 
+        margin-top:-10%; 
+        visibility: hidden;
+    }
+}
+  
+button {
     width: 180px;
     color: white;
     font-size: 16px;
