@@ -1,0 +1,66 @@
+.section {
+    margin: 5% auto 10% 3%;
+}
+
+.sectionHeader {
+    font-family: 'Cascadia Code', sans-serif;
+    font-size: 50px;
+}
+
+.subheading {
+    font-family: 'Cascadia Code', sans-serif;
+    font-size: 30px;
+}
+
+.info {
+    font-size: 16px;
+}
+
+.info a {
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+.info a:visited {
+    color: inherit;
+}
+.info a:hover {
+    color: #e0be14;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+    align-items: start;
+    margin: 2% 2% 2% 0;
+}
+
+.col {
+    flex: 50%;
+    margin-right: 3%;
+    left: 0;
+    top:0;
+}
+
+.projectImage {
+    border: white 2px solid;
+    margin-top: 2%;
+    width: 80%
+}
+
+@media screen and (max-width: 768px) {
+   .row {
+        flex-direction: column;
+   }
+
+   .col {
+    margin-bottom: 5%;
+   }
+}
+
+.contactLogo {
+    padding: 2% 3% 2% 0;
+    width: 5%;
+}
+
