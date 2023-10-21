@@ -34,6 +34,30 @@ Phones: max-width: 480px
     z-index: 5;
 }
 
+
+@media screen and (max-height: 630px) {
+    .navbar {
+        background-image: linear-gradient(rgb(255, 255, 255), rgb(240, 242, 245));
+    }
+}
+
+@media screen and (max-height: 400px) {
+    .navbar {
+        background-image: linear-gradient(rgb(255, 255, 255), rgb(232, 234, 245));
+    }
+}
+
+@media screen and (max-height: 320px) {
+    .navbar {
+        background-image: linear-gradient(rgb(255, 255, 255), rgb(224, 228, 240));
+    }
+}
+
+@media screen and (max-height: 250px) {
+    .navbar {
+        background-image: linear-gradient(rgb(255, 255, 255), rgb(214, 219, 234));
+    }
+}
 .logo {
     width: 80px;
     cursor: pointer;
