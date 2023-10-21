@@ -25,15 +25,13 @@ Phones: max-width: 480px
 .navbar {
     padding-left: 2%;
     padding-right: 4%;
-    height: 10%;
+    height: 90px;
     display: flex;
     align-items: center;
     position: sticky;
     top: 0;
     background-image: linear-gradient(rgb(255, 255, 255), rgb(243, 244, 245));
-
-    /* background-color: white;
-    border-bottom: #24326f 2px solid; */
+    z-index: 5;
 }
 
 .logo {

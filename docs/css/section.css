@@ -14,6 +14,7 @@
 
 .info {
     font-size: 16px;
+    width: 90%;
 }
 
 .info a {
@@ -24,12 +25,13 @@
 .info a:visited {
     color: inherit;
 }
+
 .info a:hover {
     color: #e0be14;
 }
 
 .row {
-    display: flex;
+    
     flex-direction: row;
     height: 70%;
     align-items: start;
@@ -37,10 +39,14 @@
 }
 
 .col {
-    flex: 50%;
+    display: inline-block;
     margin-right: 3%;
     left: 0;
-    top:0;
+    top: 0;
+}
+
+.skillImage {
+    height: 50px;
 }
 
 .projectImage {
@@ -49,18 +55,85 @@
     width: 80%
 }
 
-@media screen and (max-width: 768px) {
-   .row {
-        flex-direction: column;
-   }
-
-   .col {
-    margin-bottom: 5%;
-   }
+.imageCredits {
+    font-size: 14px;
 }
 
 .contactLogo {
     padding: 2% 3% 2% 0;
     width: 5%;
 }
+
+
+/* Modified from https://alvarotrigo.com/blog/html-css-timelines/ */
+.timeline {
+    width: 60%;
+    padding: 30px 20px;
+}
+
+.timeline ul {
+    list-style-type: none;
+    border-left: 2px solid #24326f;
+    padding: 10px 5px;
+}
+
+.timeline ul li {
+    padding: 20px 20px;
+    position: relative;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.timeline ul li span {
+    display: inline-block;
+    background-color: #e0be14;
+    border-radius: 25px;
+    padding: 2px 5px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.timeline ul li .content h3 {
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.timeline ul li .content p {
+    padding: 5px 0px 15px 0px;
+    font-size: 15px;
+}
+
+.timeline ul li:before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #24326f;
+    border-radius: 50%;
+    left: -11px;
+    top: 28px;
+    transition: .5s;
+}
+
+.timeline ul li:hover:before {
+    background-color: #e0be14;
+    box-shadow: 0px 0px 10px 2px #e0be14;
+}
+
+@media screen and (max-width: 768px) {
+    .timeline {
+        width: 90%;
+    }
+
+    /* .row {
+        flex-direction: column;
+    } */
+
+    .col {
+        margin-bottom: 5%;
+        flex: 25%;
+    }
+}
+
+
 
