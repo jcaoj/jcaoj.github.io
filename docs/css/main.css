@@ -19,6 +19,7 @@ Phones: max-width: 480px
     color: #24326f;
     box-sizing: border-box;
     position: fixed;
+    scroll-behavior: smooth;
 }
 
 /* NAVBAR */
